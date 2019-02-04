@@ -160,11 +160,11 @@ def player_numbers(team)
         player_numbers << :players[:number]
       end
     end
-  end
   elsif game_hash[:away][:team_name] == team
     game_hash.each do |local, baseinfo|
       baseinfo.each do |sections, people|
         player_numbers << :players[:number]
       end
     end
+  end
 end
