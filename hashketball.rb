@@ -173,7 +173,6 @@ def player_numbers(team)
   return player_nums
 end
 
-player_numbers("Charlotte Hornets")
 
 def player_stats(name)
   if game_hash[:home][:players].include?(name)
