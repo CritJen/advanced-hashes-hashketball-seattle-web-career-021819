@@ -161,9 +161,7 @@ def player_numbers(team)
   player_numbers = []
   if game_hash[:home][:team_name] == team
     game_hash.each do |local, baseinfo|
-      binding.pry
       baseinfo.each do |sections, people|
-        binding.pry
         player_numbers << :players[:number]
       end
     end
@@ -174,6 +172,7 @@ def player_numbers(team)
       end
     end
   end
+  return player_numbers
 end
 
 player_numbers
