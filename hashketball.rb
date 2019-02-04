@@ -163,6 +163,7 @@ def player_numbers(team)
     game_hash.each do |local, baseinfo|
       binding.pry
       baseinfo.each do |sections, people|
+        binding.pry
         player_numbers << :players[:number]
       end
     end
