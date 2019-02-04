@@ -122,6 +122,6 @@ def num_points_scored(name)
   if game_hash[:home][:players].include?(name)
     return game_hash[:home][:players][player_key][:points]
   elsif game_hash[:away][:players].include?(name)
-    return game_hash[:away][:players][player_key][:points]
+    return game_hash[:away][:players][name][:points]
   end
 end
