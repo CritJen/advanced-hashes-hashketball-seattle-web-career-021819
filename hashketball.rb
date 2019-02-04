@@ -184,4 +184,5 @@ end
 
 def big_shoe_rebounds
   every_player = game_hash[:home][:players].merge(game_hash[:away][:players])
+  biggest_shoe = every_player.values_at(:shoe).max
 end
