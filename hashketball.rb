@@ -147,6 +147,7 @@ def team_names
     info.each do |stat, quantity|
       if stat == :team_name
         return quantity
+        binding.pry
       end
     end
   end
