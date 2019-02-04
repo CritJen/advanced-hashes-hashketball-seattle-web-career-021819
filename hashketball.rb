@@ -160,12 +160,9 @@ end
 def player_numbers(team)
   player_nums = []
   if game_hash[:home][:team_name] == team
-    game_hash.each do |local, baseinfo|
-      baseinfo.each do |sections, people|
-        binding.pry
-        player_nums << :players[:number]
-        binding.pry 
-      end
+    game_hash[:home][:players].each do |player_name, stat|
+      player_nums << player_name[:number]
+    end 
     end
   elsif game_hash[:away][:team_name] == team
     game_hash.each do |local, baseinfo|
