@@ -1,5 +1,6 @@
 # Write your code here!
 require 'pry'
+
 def game_hash
     {:home => {
       :team_name => "Brooklyn Nets",
@@ -152,6 +153,8 @@ def team_names
     end
   end
 end
+
+team_names
 
 def player_numbers(team)
   player_numbers = []
