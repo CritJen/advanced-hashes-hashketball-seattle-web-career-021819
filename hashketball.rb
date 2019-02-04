@@ -164,8 +164,8 @@ def player_numbers(team)
       player_nums << stat[:number]
     end
   elsif game_hash[:away][:team_name] == team
-    if game_hash[:home][:team_name] == team
-      game_hash[:home][:players].each do |player_name, stat|
+    if game_hash[:away][:team_name] == team
+      game_hash[:away][:players].each do |player_name, stat|
         player_nums << stat[:number]
       end
     end
