@@ -123,4 +123,5 @@ def num_points_scored(name)
     return hasketball[:home][:players][name][:points]
   elsif hasketball[:away][:players].include?(name)
     return hasketball[:away][:players][name][:points]
+  end
 end
