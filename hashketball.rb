@@ -172,5 +172,8 @@ end
 
 def player_stats(name)
   if game_hash[:home][:players].include?(name)
-  return game_hash[:home][:players][name]
+    return game_hash[:home][:players][name]
+  elsif game_hash[:home][:players].include?(name)
+    return game_hash[:home][:players][name]
+  end
 end
