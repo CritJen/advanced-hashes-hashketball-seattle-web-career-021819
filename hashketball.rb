@@ -158,7 +158,7 @@ end
 
 
 def player_numbers(team)
-  player_numbers = []
+  player_nums = []
   if game_hash[:home][:team_name] == team
     game_hash.each do |local, baseinfo|
       baseinfo.each do |sections, people|
