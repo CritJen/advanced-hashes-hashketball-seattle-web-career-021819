@@ -1,7 +1,7 @@
 # Write your code here!
 require 'pry'
 def game_hash
-  :hasketball = {
+  hasketball = {
     :home => {
       :team_name => "Brooklyn Nets",
       :colors => [black, white],
@@ -131,7 +131,6 @@ def good_practices
       end
     end
   end
-end
 end
 
 good_practices
