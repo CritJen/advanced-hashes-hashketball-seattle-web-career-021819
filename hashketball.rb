@@ -144,10 +144,11 @@ def team_colors(team)
 end
 
 def team_names
+  teams = []
   game_hash.each do |local, info|
     info.each do |stat, quantity|
       if stat == :team_name
-        return quantity
+        teams << quantity
         binding.pry
       end
     end
