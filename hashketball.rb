@@ -144,6 +144,7 @@ end
 
 def team_names
   game_hash.each do |local, info|
+    binding.pry
     local.each do |stat, quantity|
       if stat == :team_name
         return quantity
