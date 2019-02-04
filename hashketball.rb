@@ -188,6 +188,7 @@ def big_shoe_rebounds
   every_player.each do |player_name, stat|
     if stat[:shoe] == biggest_shoe
       return stat[:rebounds]
+      binding.pry
     end
   end
 end
