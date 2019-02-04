@@ -143,5 +143,10 @@ def team_colors(team)
 end
 
 def team_names
-  return game_hash.keys
+  game_hash.each do |local, info|
+    local.each do |stat, quantity|
+      if stat == :team_name
+        return quantity
+      end
+    end
 end
