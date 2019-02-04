@@ -151,3 +151,14 @@ def team_names
     end
   end
 end
+
+def player_numbers(team)
+  player_numbers = []
+  if game_hash[:home][:team_name] == team
+    game_hash.each do |local, baseinfo|
+      baseinfo.each do |sections, people|
+        player_numbers << :players[:number]
+  elsif game_hash[:away][:team_name] == team
+    return game_hash[:away][:colors]
+  end
+end
