@@ -54,7 +54,7 @@ def game_hash
       :steals => 4,
       :blocks => 11,
       :slam_dunks => 1
-     }
+     }}
    },
     :away => {
       :team_name => "Charlotte Hornets",
@@ -123,6 +123,6 @@ def num_points_scored(name)
   if game_hash[:home][:players].include?(name)
     return game_hash[:home][:players][player_key][:points]
   elsif game_hash[:away][:players].include?(name)
-    return game_hash[:away][:players][player_key][:points]    
+    return game_hash[:away][:players][player_key][:points]
   end
 end
