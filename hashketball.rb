@@ -164,6 +164,7 @@ def player_numbers(team)
       baseinfo.each do |sections, people|
         binding.pry
         player_nums << :players[:number]
+        binding.pry 
       end
     end
   elsif game_hash[:away][:team_name] == team
