@@ -149,17 +149,16 @@ def team_names
     info.each do |stat, quantity|
       if stat == :team_name
         teams << quantity
-        binding.pry
       end
     end
   end
   return teams
 end
 
-team_names
+
 
 def player_numbers(team)
-  player_numbers = []
+  player_numbers = {}
   if game_hash[:home][:team_name] == team
     game_hash.each do |local, baseinfo|
       baseinfo.each do |sections, people|
