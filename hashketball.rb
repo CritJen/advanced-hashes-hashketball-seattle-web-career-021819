@@ -184,10 +184,9 @@ end
 
 def big_shoe_rebounds
   every_player = game_hash[:home][:players].merge(game_hash[:away][:players])
-  biggest_shoe = every_player.values_at(:shoe).max
+  biggest_shoe = every_player.values_at("shoe").max
+  binding.pry
   every_player.each do |player_name, stat|
-    binding.pry
-
     if stat[:shoe] == biggest_shoe
       return stat[:rebounds]
     end
