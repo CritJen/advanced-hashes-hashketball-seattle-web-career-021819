@@ -153,6 +153,7 @@ def team_names
       end
     end
   end
+  return teams
 end
 
 team_names
