@@ -144,4 +144,4 @@ end
 
 def team_names
   return game_hash.keys
-end 
+end
