@@ -162,7 +162,6 @@ def player_numbers(team)
   if game_hash[:home][:team_name] == team
     game_hash[:home][:players].each do |player_name, stat|
       player_nums << stat[:number]
-      binding.pry
     end
   elsif game_hash[:away][:team_name] == team
     if game_hash[:home][:team_name] == team
@@ -174,7 +173,7 @@ def player_numbers(team)
   return player_nums
 end
 
-player_numbers("Brooklyn Nets")
+player_numbers("Charlotte Hornets")
 
 def player_stats(name)
   if game_hash[:home][:players].include?(name)
